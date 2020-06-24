@@ -1,3 +1,4 @@
+//mouse functions with color changes
 var box = document.getElementById("box");
 box.style.width = "100%"
 box.style.height = "2000px"
@@ -25,16 +26,19 @@ window.addEventListener("mouseout", mouseOut);
 function mouseOut() {
     box.style.backgroundColor = "white"
 }
-
-box.addEventListener("keypress", function(){
-    if(event.which === 82){
-    box.style.backgroundColor = "red"
+//keyboard functions with color changes
+box.addEventListener("keypress", function(event){
+    if(event.keyCode === 82){
+        box.style.backgroundColor = "red"
+    }else if(event.keyCode === 66){
+        box.style.backgroundColor = "blue"
+    }else if(event.keyCode === 89){
+        box.style.backgroundColor = "yellow"
+    }else if(event.keyCode === 71){
+        box.style.backgroundColor = "green"
+    }else if(event.keyCode === 79){
+        box.style.backgroundColor = "orange"
+    }else if(event.keyCode === 87){
+        box.style.backgroundColor = "white"
     }
 })
-
-/*
-document.addEventListener('keypress', function(e){
-    console.log(e.keyCode)
-})
-event.code for the letters
-*/
