@@ -26,6 +26,12 @@ function mouseOut() {
     box.style.backgroundColor = "white"
 }
 
+box.addEventListener("keypress", function(){
+    if(event.which === 82){
+    box.style.backgroundColor = "red"
+    }
+})
+
 /*
 document.addEventListener('keypress', function(e){
     console.log(e.keyCode)
