@@ -1,28 +1,34 @@
 var box = document.getElementById("box");
-box.style.width = "200px"
-box.style.border = "200px"
-box.addEventListener("mouseover", mouseOver);
+box.style.width = "100%"
+box.style.height = "2000px"
+window.addEventListener("mouseover", mouseOver);
 function mouseOver() {
     box.style.backgroundColor = "blue"
 }
-
-box.addEventListener("mousedown", mouseDown);
+window.addEventListener("mousedown", mouseDown);
 function mouseDown() {
     box.style.backgroundColor = "red"
 }
-box.addEventListener("mouseup", mouseUp);
+window.addEventListener("mouseup", mouseUp);
 function mouseUp() {
     box.style.backgroundColor = "yellow"
 }
-box.addEventListener("dblclick", dblClick);
+window.addEventListener("dblclick", dblClick);
 function dblClick() {
     box.style.backgroundColor = "green"
 }
-box.addEventListener("scroll", scrollOrange);
+window.addEventListener("scroll", scrollOrange);
 function scrollOrange() {
     box.style.backgroundColor = "orange"
 }
-box.addEventListener("mouseout", mouseOut);
+window.addEventListener("mouseout", mouseOut);
 function mouseOut() {
     box.style.backgroundColor = "white"
 }
+
+/*
+document.addEventListener('keypress', function(e){
+    console.log(e.keyCode)
+})
+event.code for the letters
+*/
